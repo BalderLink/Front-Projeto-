@@ -6,7 +6,7 @@ export default function CadastroUsuario() {
                 <h1 className="mb-20 text-3xl font-semibold">
                     Cadastro Usuário
                 </h1>
-                <form className="flex flex-col items-center">
+                <form className="w-full flex flex-col items-center">
                 <input className="p-2 m-3 rounded-lg w-full" type="text" placeholder="Nome" />
                 <input className="p-2 m-3 rounded-lg w-full" type="email" placeholder="Email" />
                 <input className="p-2 m-3 rounded-lg w-full" type="password" placeholder="Senha" />
