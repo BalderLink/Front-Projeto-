@@ -6,7 +6,7 @@ export default function Home() {
                 <h1 className="mb-20 text-3xl font-semibold">
                     Avaliação de professores
                 </h1>
-                <form className="flex flex-col items-center">
+                <form className="w-full flex flex-col items-center">
                     <input className="p-2 m-3 rounded-lg w-full" type="text" placeholder="nome" />
                     <input className="p-2 m-3 rounded-lg w-full" type="password" placeholder="senha" />
                     <div className="flex flex-row">
