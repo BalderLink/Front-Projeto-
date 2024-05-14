@@ -7,7 +7,8 @@ export default function Home() {
             Avaliação de professores
           </h1>
           <input className="p-2 m-3 rounded-lg w-full" type="text" placeholder="nome" />
-          <input className="p-2 m-3 rounded-lg w-full" type="text" placeholder="senha" />
+          <input className="p-2 m-3 rounded-lg w-full" type="password" placeholder="senha" />
+
           <div className="flex flex-row">
             <button className="transition-transform duration-300 hover:scale-110 p-2 m-3 bg-green-300 rounded-lg">Entrar</button>
             <button className="transition-transform duration-300 hover:scale-110 p-2 m-3 bg-green-300 rounded-lg">Criar conta</button>
