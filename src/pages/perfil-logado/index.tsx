@@ -2,12 +2,18 @@ export default function PerfilDeslogado() {
     return (
         <div className="bg-gray-300 flex flex-col min-h-screen">
             <div className="bg-green-200 h-16 w-full flex justify-between">
-                <img src="unb.png" alt="Logo UNB" className="flex h-10 mt-2 ml-2 " />
-                <button className="hover:scale-110 p-2 m-3 bg-blue-500 text-white border-2 border-white rounded-xl">Fazer Login</button>
+                <img src="unb.png" alt="Logo UNB" className="flex h-10 mt-4 ml-2 " />
+                <div className="flex">
+                    <img src="itadori.jpg" alt="" className="rounded-full mr-4 w-16 h-auto" />
+                    <button className="w-10 h-auto justify-"><img src="saida.png" alt="sair da conta" /></button>
+                </div>
             </div>
             <button className="hover:scale-110 p-3 m-3 border-5 border-black text-black flex ml-72"> ⇦</button>
             <section className="relative w-1/2 h-72 -mt-16 left-1/2 transform -translate-x-1/2">
-                <div className="bg-green-400 h-1/2 rounded-xl "></div>
+                <div className="bg-green-400 h-1/2 rounded-xl ">
+                    <button className="p-2 border-2 border-black text-black font-bond bg-green-200 rounded-xl">Editar Perfil</button>
+                    <button className="p-2 border-2 border-black text-black font-bond bg-red-200 rounded-xl ml-3">Excluir Perfil</button>
+                </div>
                 <img src="itadori.jpg" alt="Foto do perfil" className="absolute border-3 border-green-1000 rounded-full overflow-hidden object-cover h-auto w-20 -mt-12" />
                 <div className="bg-white h-1/2 rounded-xl">
                     <h2 className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-xl font-bold text-gray-800 -mt-4">Billian</h2>
@@ -16,7 +22,7 @@ export default function PerfilDeslogado() {
                     <p className="text-center text-black font-arial"> ✉️ willian.leandro.24@cjr.org.br</p>
                 </div>
             </section>
-            <section className="relative mt-2 rounded-xl h-1/2 w-1/2 bg-white left-1/2 transform -translate-x-1/2">
+            <section className="relative mt-2 rounded-xl h-96 w-1/2 bg-white left-1/2 transform -translate-x-1/2">
                 <h2 className="font-bold text-black ml-2 "> Publicações</h2>
                 <div className="mt-1 bg-green-400 h-1/2 w-full rounded-xl ">
                     <div className="flex ">
