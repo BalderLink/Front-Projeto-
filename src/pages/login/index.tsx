@@ -1,9 +1,7 @@
-import { FormEvent, useState } from "react";
-
 export default function Home() {
     return (
-        <main className="text-black bg-gray-200 flex">
-            <img src="/fundo.webp" alt="foto_de_fundo" className="w-1/2 h-screen" />
+        <main className="text-black bg-gray-200 flex min-h-screen">
+            <img src="/fundo.webp" alt="foto_de_fundo" className="w-1/2 h-auto object-cover" />
             <section className="flex-col justify-center items-center flex p-32 w-1/2">
                 <h1 className="mb-20 text-3xl font-semibold">
                     Avaliação de professores
