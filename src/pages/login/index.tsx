@@ -2,8 +2,8 @@ export default function Home() {
     return (
         <main className="text-black bg-gray-200 flex min-h-screen">
             <img src="/fundo.webp" alt="foto_de_fundo" className="w-1/2 h-auto object-cover" />
-            <section className="flex-col justify-center items-center flex p-32 w-1/2">
-                <h1 className="mb-20 text-3xl font-semibold">
+            <section className="flex flex-col justify-center items-center flex p-8 w-1/2">
+                <h1 className="mb-8 text-3xl font-semibold text-center">
                     Avaliação de professores
                 </h1>
                 <form className="w-full flex flex-col items-center">
