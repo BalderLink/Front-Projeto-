@@ -3,12 +3,12 @@ export default function FeedLogado() {
         <main className="text-black bg-gray-200 flex flex-col min-h-screen">
            
             <header className="bg-green-200 flex justify-between items-center p-4">
-                <img src="/logo.png" alt="logo" className="h-12" />
+                <img src="unb.png" alt="logo" className="h-12" />
                 <div className="flex items-center">
                     <button className="p-2 rounded-full bg-gray-100">
                         <i className="bell-icon"></i>
                     </button>
-                    <img src="/avatar.png" alt="avatar" className="h-12 w-12 rounded-full mx-2" />
+                    <img src="itadori.jpg" alt="avatar" className="h-12 w-12 rounded-full mx-2" />
                     <button className="p-2 bg-red-400 text-white rounded-lg">
                         Sair
                     </button>
@@ -29,7 +29,7 @@ export default function FeedLogado() {
                     {[...Array(6)].map((_, index) => (
                         <div key={index} className="bg-white p-4 rounded-lg shadow-md">
                             <img 
-                                src="/placeholder.png" 
+                                src="transferir (1).png" 
                                 alt="Professor" 
                                 className="h-24 w-24 mx-auto"
                             />
@@ -56,7 +56,7 @@ export default function FeedLogado() {
                     {[...Array(6)].map((_, index) => (
                         <div key={index} className="bg-white p-4 rounded-lg shadow-md">
                             <img 
-                                src="/placeholder.png" 
+                                src="transferir (1).png" 
                                 alt="Professor" 
                                 className="h-24 w-24 mx-auto"
                             />
