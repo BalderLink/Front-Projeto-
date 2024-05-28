@@ -4,15 +4,15 @@ export default function PerfilDeslogado() {
             <div className="bg-green-200 h-16 w-full flex justify-between">
                 <img src="unb.png" alt="Logo UNB" className="flex h-10 mt-4 ml-2 " />
                 <div className="flex">
-                    <img src="simpsonprof.jpg" alt="Foto do professor" className="rounded-full mr-4 w-16 h-auto" />
+                    <button className="w-24 h-10 m-4 bg-blue-500 text-white border-2 border-white rounded-xl">Fazer Login</button>
                     <button className="w-10 h-auto justify-"><img src="saida.png" alt="sair da conta" /></button>
                 </div>
             </div>
             <button className="hover:scale-110 p-3 m-3 border-5 border-black text-black flex ml-72"> ⇦</button>
             <section className="relative w-1/2 h-72 -mt-16 left-1/2 transform -translate-x-1/2">
                 <div className="bg-green-400 h-1/2 rounded-xl "> 
-                    <button className="p-2 border-2 border-black text-black font-bold bg-green-200 rounded-xl">Editar Perfil</button>
-                    <button className="p-2 border-2 border-black text-black font-bold bg-red-200 rounded-xl ml-3">Excluir Perfil</button>
+                    
+                    
                 </div>
                 <img src="simpsonprof.jpg" alt="Foto do perfil" className="absolute border-3 border-green-1000 rounded-full overflow-hidden object-cover h-auto w-20 -mt-12" />
                 <div className="bg-white h-1/2 rounded-xl">
