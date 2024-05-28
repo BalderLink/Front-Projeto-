@@ -3,7 +3,7 @@ export default function FeedDeslogado() {
         <main className="text-black bg-gray-200 flex flex-col min-h-screen">
            
             <header className="bg-green-200 flex justify-between items-center p-4">
-                <img src="/logo.png" alt="logo" className="h-12" />
+                <img src="unb.png" alt="logo" className="h-12" />
                 <button className="p-2 bg-blue-400 text-white rounded-lg">
                     Login
                 </button>
@@ -23,7 +23,7 @@ export default function FeedDeslogado() {
                     {[...Array(3)].map((_, index) => (
                         <div key={index} className="bg-white p-4 rounded-lg shadow-md">
                             <img 
-                                src="/placeholder.png" 
+                                src="transferir (1).png" 
                                 alt="Professor" 
                                 className="h-24 w-24 mx-auto"
                             />
@@ -45,7 +45,7 @@ export default function FeedDeslogado() {
                     {[...Array(6)].map((_, index) => (
                         <div key={index} className="bg-white p-4 rounded-lg shadow-md">
                             <img 
-                                src="/placeholder.png" 
+                                src="transferir (1).png" 
                                 alt="Professor" 
                                 className="h-24 w-24 mx-auto"
                             />
