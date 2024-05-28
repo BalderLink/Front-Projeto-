@@ -27,7 +27,7 @@ export default function PerfilDeslogado() {
                 <div className="mt-1 bg-green-400 h-1/2 w-full rounded-xl ">
                     <div className="flex ">
                         <img src="bartsimpson.jpg" alt="Foto do perfil" className="mt-1 ml-1 border-2 border-green-700 rounded-full overflow-hidden object-cover h-auto w-14" />
-                        <p className="font-bold text-black">Professor Genérico </p>
+                        <p className="font-bold text-black">BartzinDeCria12</p>
                         <p className="text-gray-600 font-8 text-sm"> - 23/10/2021, às 19:32 - João - Avaliação</p>
                     </div>
                     <div className="">
@@ -37,8 +37,8 @@ export default function PerfilDeslogado() {
                 </div>
                 <div className="mt-2 bg-green-400 h-1/2 w-full rounded-xl ">
                     <div className="flex ">
-                        <img src="" alt="Foto do perfil" className="mt-1 ml-1 border-2 border-green-700 rounded-full overflow-hidden object-cover h-auto w-14" />
-                        <p className="font-bold text-black">Professor Genérico </p>
+                        <img src="transferir.png" alt="Foto do perfil" className="mt-1 ml-1 border-2 border-green-700 rounded-full overflow-hidden object-cover h-auto w-14" />
+                        <p className="font-bold text-black">LisaSimpson01</p>
                         <p className="text-gray-600 font-8 text-sm"> - 05/12/2022, às 20:16 - Vitor - Avaliação</p>
                     </div>
                     <div className="">
