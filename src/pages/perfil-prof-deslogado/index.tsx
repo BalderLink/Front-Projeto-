@@ -5,7 +5,7 @@ export default function PerfilDeslogado() {
                 <img src="unb.png" alt="Logo UNB" className="flex h-10 mt-4 ml-2 " />
                 <div className="flex">
                     <button className="w-24 h-10 m-4 bg-blue-500 text-white border-2 border-white rounded-xl">Fazer Login</button>
-                    <button className="w-10 h-auto justify-"><img src="saida.png" alt="sair da conta" /></button>
+                    
                 </div>
             </div>
             <button className="hover:scale-110 p-3 m-3 border-5 border-black text-black flex ml-72"> ⇦</button>
