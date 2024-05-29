@@ -1,13 +1,18 @@
 export default function PerfilDeslogado() {
     return (
         <div className="bg-gray-300 flex flex-col min-h-screen">
-            <div className="bg-green-200 h-16 w-full flex justify-between">
-                <img src="unb.png" alt="Logo UNB" className="flex h-10 mt-4 ml-2 " />
-                <div className="flex">
-                    <img src="itadori.jpg" alt="" className="rounded-full mr-4 w-16 h-auto" />
-                    <button className="w-10 h-auto justify-"><img src="saida.png" alt="sair da conta" /></button>
+            <header className="bg-green-200 flex justify-between items-center p-4">
+                <img src="unb.png" alt="logo" className="h-12" />
+                <div className="flex items-center">
+                    <button className="p-2 rounded-full bg-gray-100">
+                        <i className="bell-icon"></i>
+                    </button>
+                    <img src="itadori.jpg" alt="avatar" className="h-12 w-12 rounded-full mx-2" />
+                    <button className="p-2 bg-red-400 text-white rounded-lg">
+                        Sair
+                    </button>
                 </div>
-            </div>
+            </header>
             <button className="hover:scale-110 p-3 m-3 border-5 border-black text-black flex ml-72"> ⇦</button>
             <section className="relative w-1/2 h-72 -mt-16 left-1/2 transform -translate-x-1/2">
                 <div className="bg-green-400 h-1/2 rounded-xl ">
