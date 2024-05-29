@@ -49,4 +49,5 @@ export default function PerfilDeslogado() {
             </section>
         </div>
     );
+    
 }
