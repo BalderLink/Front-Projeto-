@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 export default function FeedLogado() {
     const [showModal, setShowModal] = useState(false);
+    const [showSortModal, setShowSortModal] = useState(false);
 
     return (
         <main className="text-black bg-gray-200 flex flex-col min-h-screen">
@@ -45,16 +46,27 @@ export default function FeedLogado() {
                 <hr className="border-black my-8" />
 
                 <h2 className="text-2xl font-semibold mb-4">Todos os Professores</h2>
-                <div className="flex justify-end mb-4">
+                <div className="flex justify-end mb-4 relative">
                     <button
                         className="bg-blue-400 text-white p-2 rounded-lg mx-2"
                         onClick={() => setShowModal(true)}
                     >
                         Nova Publicação
                     </button>
-                    <button className="bg-blue-400 text-white p-2 rounded-lg mx-2">
+                    <button
+                        className="bg-blue-400 text-white p-2 rounded-lg mx-2"
+                        onClick={() => setShowSortModal(!showSortModal)}
+                    >
                         Ordenar
                     </button>
+                    {showSortModal && (
+                        <div className="absolute right-0 mt-12 bg-blue-200 rounded-lg shadow-lg p-4">
+                            <p className="cursor-pointer hover:bg-blue-300 p-2">Nome</p>
+                            <p className="cursor-pointer hover:bg-blue-300 p-2">Matéria</p>
+                            <p className="cursor-pointer hover:bg-blue-300 p-2">Recentes</p>
+                            <p className="cursor-pointer hover:bg-blue-300 p-2">Antigas</p>
+                        </div>
+                    )}
                 </div>
                 <div className="grid grid-cols-3 gap-4">
                     {[...Array(6)].map((_, index) => (
