@@ -20,40 +20,36 @@ export default function AvaliacaoComComentario() {
             <div className="flex items-center">
               <img src="itadori.jpg" alt="avatar" className="h-12 w-12 rounded-full mr-4" />
               <div>
-                <h3 className="font-bold">Morty Gamer</h3>
-                <p className="text-gray-600">07/04/2024, às 21:42 · João Frango · Surf</p>
+                <h3 className="font-bold">Billian</h3>
+                <p className="text-gray-600">07/04/2024, às 21:42 · Heitor · Matematica</p>
               </div>
-              <div className="flex ml-auto">
-                <button className="p-2">
-                  <i className="fas fa-comment-dots"></i>
-                </button>
-                <button className="p-2 ml-2">
-                  <i className="fas fa-trash"></i>
-                </button>
+              <div className="flex ml-auto space-x-4">
+                <button className="p-2 bg-blue-500 text-white rounded">Criar Comentário</button>
+                <button className="p-2 bg-red-500 text-white rounded">Excluir</button>
               </div>
             </div>
-            <p className="mt-2">Professor bacana. Adoro quando falta!</p>
+            <p className="mt-2">Baita professor!</p>
             <p className="text-gray-600 mt-2">2 comentários</p>
           </div>
           <div className="bg-green-200 p-4 rounded-lg w-full mb-4">
             <div className="flex items-center">
-              <img src="itadori.jpg" alt="avatar" className="h-10 w-10 rounded-full mr-4" />
+              <img src="" alt="." className="h-10 w-10 rounded-full mr-4" />
               <div>
-                <h4 className="font-bold">João Frango</h4>
+                <h4 className="font-bold">luquinhas</h4>
                 <p className="text-gray-600">07/04/2024, às 21:43</p>
               </div>
             </div>
-            <p className="mt-2">tudo encima bro?</p>
+            <p className="mt-2">concordo</p>
           </div>
           <div className="bg-green-200 p-4 rounded-lg w-full">
             <div className="flex items-center">
-              <img src="itadori.jpg" alt="avatar" className="h-10 w-10 rounded-full mr-4" />
+              <img src="" alt="." className="h-10 w-10 rounded-full mr-4" />
               <div>
-                <h4 className="font-bold">João Frango</h4>
+                <h4 className="font-bold">joaozin</h4>
                 <p className="text-gray-600">07/04/2024, às 21:43</p>
               </div>
             </div>
-            <p className="mt-2">você viu o Kadu?</p>
+            <p className="mt-2">nem é mano</p>
           </div>
         </section>
       </div>
