@@ -3,9 +3,14 @@ import Modal from '../../components/Modal';
 
 export default function PerfilDeslogado() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  const handleFileChange = (event) => {
+    setSelectedFile(event.target.files[0]);
+  };
 
   return (
     <div className="bg-gray-300 flex flex-col min-h-screen">
@@ -65,7 +70,9 @@ export default function PerfilDeslogado() {
       </section>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <form>
-          <img src="itadori.jpg" alt="Foto do perfil" className="mx-auto border-2 border-gray-300 rounded-full overflow-hidden object-cover h-24 w-24" />
+          <div className="flex justify-center">
+            <img src={selectedFile ? URL.createObjectURL(selectedFile) : "itadori.jpg"} alt="Foto do perfil" className="border-2 border-gray-300 rounded-full overflow-hidden object-cover h-24 w-24" />
+          </div>
           <div className="mt-4">
             <label className="block text-sm font-medium text-gray-700">Nome</label>
             <input type="text" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" />
@@ -93,6 +100,10 @@ export default function PerfilDeslogado() {
           <div className="mt-4">
             <label className="block text-sm font-medium text-gray-700">Confirmar nova senha</label>
             <input type="password" className="mt-1 block w-full p-2 border border-gray-300 rounded-md" />
+          </div>
+          <div className="mt-4">
+            <label className="block text-sm font-medium text-gray-700">Trocar Foto</label>
+            <input type="file" onChange={handleFileChange} className="mt-1 block w-full p-2 border border-gray-300 rounded-md" />
           </div>
           <div className="mt-6">
             <button type="submit" className="w-full py-2 px-4 bg-green-500 text-white rounded-md">
