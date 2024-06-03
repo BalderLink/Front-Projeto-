@@ -97,6 +97,7 @@ export default function PerfilDeslogado() {
           <div className="mt-6">
             <button type="submit" className="w-full py-2 px-4 bg-green-500 text-white rounded-md">
               Salvar
+              
             </button>
           </div>
         </form>
