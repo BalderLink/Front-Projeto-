@@ -1,11 +1,33 @@
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/router";
+import axios from "axios";
 
 export default function Home() {
   const router = useRouter();
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [error, setError] = useState("");
 
   const handleCreateAccountClick = () => {
     router.push("/cadastro");
+  };
+
+  const handleLogin = async (e: FormEvent) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:5000/login", {
+        email,
+        senha,
+      });
+      console.log("Response:", response.data);
+    } catch (error) {
+      if (axios.isAxiosError(error)) {
+        setError("Nome ou senha inválidos");
+      } else {
+        setError("Erro inesperado ao tentar fazer login");
+      }
+      console.error("Login error:", error);
+    }
   };
 
   return (
@@ -15,16 +37,23 @@ export default function Home() {
         <h1 className="mb-20 text-3xl font-semibold">
           Avaliação de professores
         </h1>
-        <form className="w-full flex flex-col items-center">
+        <form
+          className="w-full flex flex-col items-center"
+          onSubmit={handleLogin}
+        >
           <input
             className="p-2 m-3 rounded-lg w-full"
             type="text"
-            placeholder="nome"
+            placeholder="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <input
             className="p-2 m-3 rounded-lg w-full"
             type="password"
             placeholder="senha"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
           />
           <div className="flex flex-row">
             <button

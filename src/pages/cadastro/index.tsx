@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 interface createUserProps {
   email: string;
@@ -11,6 +12,12 @@ interface createUserProps {
 }
 
 export default function CadastroUsuario() {
+  const router = useRouter();
+
+  const handleCreateAccountClick = () => {
+    router.push("/login");
+  };
+
   const [formData, setFormData] = useState<createUserProps>({
     email: "",
     senha: "",
@@ -30,12 +37,12 @@ export default function CadastroUsuario() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("kakak");
     try {
       const response = await axios.post(
         "http://localhost:5000/users",
         formData
       );
+      router.push("/login");
       console.log("Response:", response.data);
     } catch (error) {
       if (axios.isAxiosError(error)) {
