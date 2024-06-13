@@ -1,6 +1,13 @@
 import { FormEvent, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+
+  const handleCreateAccountClick = () => {
+    router.push("/cadastro");
+  };
+
   return (
     <main className="text-black bg-gray-200 flex">
       <img src="/fundo.webp" alt="foto_de_fundo" className="w-1/2 h-screen" />
@@ -26,7 +33,11 @@ export default function Home() {
             >
               Entrar
             </button>
-            <button className="transition-transform duration-300 hover:scale-110 p-2 m-3 bg-green-300 rounded-lg">
+            <button
+              className="transition-transform duration-300 hover:scale-110 p-2 m-3 bg-green-300 rounded-lg"
+              type="button"
+              onClick={handleCreateAccountClick}
+            >
               Criar conta
             </button>
           </div>
