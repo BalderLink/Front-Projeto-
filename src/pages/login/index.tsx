@@ -19,7 +19,9 @@ export default function Home() {
         email,
         senha,
       });
-      console.log("Response:", response.data);
+      const { token } = response.data;
+      localStorage.setItem("authToken", token);
+      router.push("/perfil-logado");
     } catch (error) {
       if (axios.isAxiosError(error)) {
         setError("Nome ou senha inválidos");
@@ -70,6 +72,7 @@ export default function Home() {
               Criar conta
             </button>
           </div>
+          {error && <p className="text-red-500">{error}</p>}
         </form>
       </section>
     </main>
